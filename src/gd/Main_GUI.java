@@ -211,11 +211,12 @@ public class Main_GUI extends JFrame implements ActionListener, WindowListener {
 		FlatLaf.registerCustomDefaultsSource("gui.theme");
 		UIManager.put("defaultFont", new Font(FlatRobotoFont.FAMILY, Font.PLAIN, 16));
 		int now = LocalTime.now().getHour();
-		if (now >= 6 && now <= 18) {
-			FlatMacLightLaf.setup();
-		} else {
-			FlatMacDarkLaf.setup();
-		}
+		FlatMacLightLaf.setup();
+//		if (now >= 6 && now <= 18) {
+//			FlatMacLightLaf.setup();
+//		} else {
+//			FlatMacDarkLaf.setup();
+//		}
 		SwingUtilities.invokeLater(() -> new Main_GUI().setVisible(true));
 	}
 
@@ -319,3 +320,4 @@ public class Main_GUI extends JFrame implements ActionListener, WindowListener {
 	}
 
 }
+
