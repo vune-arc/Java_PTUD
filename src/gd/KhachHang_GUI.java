@@ -30,7 +30,7 @@ import javax.swing.table.DefaultTableModel;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 
 
-public class KhachHang_GUI extends JPanel {
+public class KhachHang_GUI extends JPanel implements ActionListener{
 
 	/**
 	 * 
@@ -51,6 +51,8 @@ public class KhachHang_GUI extends JPanel {
 	private Color c4;
 
 	private String maKHUpdate;
+	private JPanel pS;
+	private Go pgo;
 
 
 	public KhachHang_GUI() {
@@ -174,9 +176,12 @@ public class KhachHang_GUI extends JPanel {
 		b8.add(Box.createRigidArea(new Dimension(20, 10)));
 		b8.add(pnorth);
 		add(b8, BorderLayout.NORTH);
+		pS=new JPanel();
+		add(pS,BorderLayout.SOUTH);
+		
 		// sự kiện
-//		btnThem.addActionListener(this);
-//		btntim.addActionListener(this);
+		btnThem.addActionListener(this);
+		btntim.addActionListener(this);
 //		btnXoa.addActionListener(this);
 //		btnSua.addActionListener(this);
 //		tblKhachHang.addMouseListener(this);
@@ -283,6 +288,32 @@ public class KhachHang_GUI extends JPanel {
 		tb.getDataVector().removeAllElements();
 	}
 
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	Object o = e.getSource();
+//	boolean flagThem = false;
+	if (o.equals(btnThem)) {
+//		if(!flagThem)
+		{
+			pS.removeAll();
+			pS.setLayout(new BorderLayout());
+			KhachHangPopup khpu=new KhachHangPopup();
+			pS.add(khpu);
+			pS.revalidate();
+			pS.repaint();
+
+		}
+		
+		
+//		HienDuLieu();
+	}else if (o.equals(btntim)) {
+		pS.removeAll();
+		validate();
+	}
+} 
+}
+
 
 //	private void openAnotherInterface() {
 //		KhachHangPopup anotherInterface = new KhachHangPopup();
@@ -309,6 +340,9 @@ public class KhachHang_GUI extends JPanel {
 //			}
 //		}
 
-	}
+
+
+
+
 
 
