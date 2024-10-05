@@ -175,7 +175,7 @@ public class KhachHangPopup extends JPanel  {
 		btnHuy.setFont(fp1);
 		 bS.add(Box.createHorizontalGlue());
 	        bS.add(btnCapNhat);
-	        bS.add(Box.createRigidArea(new Dimension(20, 0))); // Tạo khoảng cách giữa hai nút
+	        bS.add(Box.createRigidArea(new Dimension(20, 50))); // Tạo khoảng cách giữa hai nút
 	        bS.add(btnHuy);
 	        bS.add(Box.createHorizontalGlue());
 		add(bS, BorderLayout.SOUTH);

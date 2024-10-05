@@ -45,11 +45,19 @@ public class Go extends JLayeredPane{
 //		panelBody.add(new JLabel("Giao diện"));
 //		panelBody.add(new JTextField("Giao diện"));
 		KhachHang_GUI kh= new KhachHang_GUI();
+		
 		JPanel pe= new JPanel();
 		pe.setPreferredSize(new Dimension(20,20));
 		panelBody.add(pe,BorderLayout.WEST);
 		panelBody.add(kh,BorderLayout.CENTER);
+		
 		add(panelBody);
+	}
+	public void updatepanelBody()
+	{
+		panelBody.removeAll();
+		panelBody.revalidate();
+		panelBody.repaint();
 	}
 	private void setMenuFull(boolean full) {
 		String icon;

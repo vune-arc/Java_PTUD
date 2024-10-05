@@ -1,3 +1,4 @@
+
 package gd;
 
 import java.awt.Component;
@@ -102,7 +103,7 @@ public class Menu extends JPanel {
 		toolBarAccentColor.setVisible(FlatUIUtils.getUIBoolean("AccentControl.show", false));
 		add(header);
 		add(scroll);
-		add(lightDarkMode);
+//		add(lightDarkMode);
 		add(toolBarAccentColor);
 	}
 

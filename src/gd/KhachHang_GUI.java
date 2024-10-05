@@ -133,8 +133,42 @@ public class KhachHang_GUI extends JPanel implements ActionListener{
 		Object[] row1 = {"KH001", "Nguyễn Văn A", "Nam", "01/01/1990", "Hà Nội", "0123456789"};
 		Object[] row2 = {"KH002", "Trần Thị B", "Nữ", "15/02/1992", "TP HCM", "0987654321"};
 
+		Object[] row14= {"KH002", "Trần Thị B", "Nữ", "15/02/1992", "TP HCM", "0987654321"};
+
 		// Thêm các hàng vào model của JTable
 		modelKhachHang.addRow(row1);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
+		modelKhachHang.addRow(row2);
 		modelKhachHang.addRow(row2);
 		// Thêm hàng dữ liệu vào bảng
 
@@ -339,9 +373,6 @@ public void actionPerformed(ActionEvent e) {
 //				modelKhachHang.removeRow(i);
 //			}
 //		}
-
-
-
 
 
 
